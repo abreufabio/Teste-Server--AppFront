@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    padding: 24px;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#painel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid #999;
+}
+
+.ok {
+    /* complete: fundo verde claro, borda verde */
+    background-color: rgb(105, 221, 17);
+    border: rgb(158, 255, 3);
+}
+
+.alerta {
+    /* complete: fundo amarelo, borda laranja */
+    background-color: rgb(245, 196, 1);
+    border: rgb(221, 92, 0);
+}
+
+.critico {
+    /* complete: fundo vermelho, texto branco */
+    background-color: rgb(187, 0, 0);
+    color: white;
+}
+
+.offline {
+    opacity: 0.4;
+    border-style: dashed;
+}
+
+body.manutencao {
+    /* complete: fundo cinza escuro, texto claro */
+    background-color: rgb(23, 23, 23);
+    color: #f6eaea;
+}
+
+#log {
+    background: #f2f2f2;
+    padding: 12px;
+    min-height: 40px;
+}
